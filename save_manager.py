@@ -186,7 +186,7 @@ class ManagerCmd(cmd.Cmd, SaveManager):
 
         self.prompt = '(Save Manager)>>> '
         self.intro = DESCRIPTION
-        self.reload_sm()
+
         logger.info(f'读取到了 {len(self.saves)} 个存档管理器存档，{len(self.slot2id)} 个映射')
 
     def do_list(self, arg):
